@@ -1,0 +1,104 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente y tipo de letra */
+    background-color: #f2f2f2; /* Color de fondo */
+    margin: 0; /* Eliminar márgenes predeterminados */
+    padding: 0; /* Eliminar relleno predeterminado */
+    display: flex; /* Mostrar elementos en un diseño de caja flexible */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Tamaño completo de la ventana */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    display: flex; /* Mostrar elementos en un diseño de caja flexible */
+    flex-direction: column; /* Apilar elementos verticalmente */
+    background-color: #fff; /* Color de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra */
+    overflow: hidden; /* Ocultar contenido desbordado */
+    max-width: 400px; /* Ancho máximo */
+}
+
+/* Estilos para los contenedores de formulario e información */
+.form-container,
+.info-container {
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilos para el contenedor del formulario */
+.form-container {
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color de texto */
+}
+
+/* Estilos para el contenedor de información */
+.info-container {
+    background-color: #f2f2f2; /* Color de fondo */
+    text-align: center; /* Alinear texto al centro */
+}
+
+/* Estilos para los títulos */
+h2 {
+    margin-top: 0; /* Eliminar margen superior */
+}
+
+/* Estilos para los campos de entrada de texto */
+input[type="text"],
+input[type="password"] {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px 0; /* Margen superior e inferior */
+    border: 1px solid #ddd; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir borde y relleno en el ancho total */
+}
+
+/* Estilos para los botones */
+.btn {
+    padding: 10px 20px; /* Espaciado interno */
+    margin-top: 10px; /* Margen superior */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+}
+
+/* Estilos para el botón de inicio de sesión */
+.btn-login {
+    background-color: #0056b3; /* Color de fondo */
+    color: #fff; /* Color de texto */
+}
+
+/* Estilos para el enlace de registro */
+.link-register {
+    color: #fff; /* Color de texto */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Estilos para el enlace de registro al pasar el cursor */
+.link-register:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/* Estilos para los botones de tipo de usuario */
+.btn-user {
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+    padding: 10px 20px; /* Espaciado interno */
+    margin-right: 10px; /* Margen derecho */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+/* Estilos para los botones de tipo de usuario al pasar el cursor */
+.btn-user:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el cursor */
+}
+
+/* Estilos para el botón de tipo de usuario seleccionado */
+.btn-user.selected {
+    background-color: #0056b3; /* Color de fondo del botón seleccionado */
+}

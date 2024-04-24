@@ -1,0 +1,77 @@
+/* Estilos generales */
+
+/* Establece la fuente y el fondo del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #70a4d1;
+    margin: 0;
+}
+
+/* Contenedor principal del formulario */
+.main {
+    max-width: 600px; /* Limita el ancho del formulario */
+    margin: 20px auto; /* Centra el formulario en la página */
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+} 
+
+/* Estilos del formulario */
+
+/* Usa un diseño de cuadrícula para organizar los elementos del formulario */
+form {
+    display: grid;
+    gap: 15px; /* Espacio entre elementos */
+}
+
+/* Etiquetas de los campos del formulario */
+label {
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos de los campos de entrada */
+input {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 8px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye el relleno en el ancho */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilos del campo de correo electrónico */
+input[type="email"] {
+    width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+/* Estilos de los elementos select */
+select {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 8px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye el relleno en el ancho */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilos del botón de envío */
+button {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 10px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor de puntero */
+}
+
+/* Estilos al pasar el cursor sobre el botón */
+button:hover {
+    background-color: #555; /* Fondo más oscuro */
+}
+
+.boton-container {
+    text-align: center;
+}
+
+
+
+

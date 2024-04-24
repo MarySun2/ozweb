@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica de la página -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión / Registro</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="./Css/estilos.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Contenedor del formulario de inicio de sesión -->
+        <div class="form-container">
+            <!-- Formulario de inicio de sesión -->
+            <form id="login-form">
+                <!-- Título del formulario -->
+                <h2>Iniciar Sesión</h2>
+                <!-- Campos de entrada para el nombre de usuario y la contraseña -->
+                <input type="text" id="username" placeholder="Usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <!-- Contenedor de botones para elegir el tipo de usuario -->
+                <div class="user-type">
+                    <!-- Botón para el tipo de usuario "Alumno" -->
+                    <button type="button" class="btn btn-user" data-user="alumno">Alumno</button>
+                    <!-- Botón para el tipo de usuario "Profesor" -->
+                    <button type="button" class="btn btn-user" data-user="profesor">Profesor</button>
+                </div>
+                <!-- Botón para enviar el formulario -->
+                <button type="submit" class="btn btn-login">Iniciar Sesión</button>
+            </form>
+            <!-- Enlace para registrarse si no se tiene una cuenta -->
+            <p>¿No tienes una cuenta? <a href="./registro.html" class="link-register">Registrarse</a></p>
+        </div>
+        <!-- Contenedor de información adicional -->
+        <div class="info-container">
+            <!-- Título de bienvenida -->
+            <h2>Bienvenido</h2>
+            <!-- Mensaje informativo -->
+            <p>Por favor, inicia sesión para acceder a tu cuenta.</p>
+        </div>
+    </div>
+    <!-- Script JavaScript para la funcionalidad interactiva -->
+    <script>
+        // Event listener para cada botón de tipo de usuario
+        document.querySelectorAll(".btn-user").forEach(function(button) {
+            button.addEventListener("click", function() {
+                // Remover la clase "selected" de todos los botones
+                document.querySelectorAll(".btn-user").forEach(function(btn) {
+                    btn.classList.remove("selected");
+                });
+                // Agregar la clase "selected" al botón clickeado
+                this.classList.add("selected");
+            });
+        });
+
+        // Event listener para el envío del formulario de inicio de sesión
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            // Obtener los valores del nombre de usuario y la contraseña
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            // Añadir aquí verificación del inicio de sesión
+        });
+    </script>
+</body>
+</html>

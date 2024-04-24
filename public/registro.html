@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuracion basica de la pagina -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="./Css/estilos.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Contenedor del formulario de registro -->
+        <div class="form-container">
+            <!-- Formulario de registro -->
+            <form id="register-form">
+                <!-- Titulo del formulario -->
+                <h2>Registro</h2>
+                <!-- Campo de entrada para el nombre de usuario -->
+                <input type="text" id="username" placeholder="Usuario" required>
+                <!-- Campo de entrada para la contraseña -->
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <!-- Campo de entrada para confirmar la contraseña -->
+                <input type="password" id="confirm-password" placeholder="Confirmar Contraseña" required>
+                <!-- Campo de entrada para el correo electronico -->
+                <input type="email" id="email" placeholder="Correo Electronico" required>
+                <!-- Contenedor para seleccionar el tipo de usuario -->
+                <div class="user-type">
+                    <!-- Etiqueta y selector de tipo de usuario -->
+                    <label for="user-type">Tipo de Usuario:</label>
+                    <select id="user-type" required>
+                        <option value="alumno">Alumno</option>
+                        <option value="profesor">Profesor</option>
+                    </select>
+                </div>
+                <!-- Boton para enviar el formulario de registro -->
+                <button type="submit" class="btn btn-register">Registrarse</button>
+            </form>
+            <!-- Enlace para iniciar sesion si ya se tiene una cuenta -->
+            <p>¿Ya tienes una cuenta? <a href="./login.html" class="link-login">Iniciar Sesión</a></p>
+        </div>
+        <!-- Contenedor de informacion adicional -->
+        <div class="info-container">
+            <!-- Titulo de bienvenida -->
+            <h2>Bienvenido</h2>
+            <!-- Mensaje informativo -->
+            <p>Por favor, complete el formulario para registrarse.</p>
+        </div>
+    </div>
+    <!-- Script JavaScript para la funcionalidad interactiva -->
+    <script>
+        // Event listener para el envio del formulario de registro
+        document.getElementById("register-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evitar el envio del formulario por defecto
+            // Obtener los valores del formulario
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirm-password").value;
+            var email = document.getElementById("email").value;
+            var userType = document.getElementById("user-type").value;
+            // Aqui implementar la logica para registrar al usuario en tu sistema
+        });
+    </script>
+</body>
+</html>
